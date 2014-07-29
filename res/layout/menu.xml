@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurry"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!--
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adUnitId="ca-app-pub-2227495363490039/4417172300"
+        ads:adSize="BANNER"
+        ads:loadAdOnCreate="true"    />
+    -->
+
+	<LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#2222"
+        android:orientation="horizontal" >
+
+		<Button
+		    android:id="@+id/userbutton"
+		    android:layout_width="26dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="4dp"
+		    android:layout_marginTop="4dp"
+		    android:background="#0000"
+		    android:drawableStart="@drawable/userbutton"
+		    android:visibility="visible"
+		    android:enabled="false" />
+
+	    <TextView
+	        android:id="@+id/welcome"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds="true"
+	        android:paddingBottom="10dp"
+	        android:paddingLeft="5dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="14dp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/devbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#0000"
+            android:drawableStart="@drawable/devbutton" >
+        </Button>
+
+        <Button
+            android:id="@+id/sharebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#0000"
+            android:drawableStart="@drawable/sharebutton" >
+        </Button>
+        
+        <Button
+            android:id="@+id/instbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#0000"
+            android:drawableStart="@drawable/newsbutton" >
+        </Button>
+
+        <Button
+            android:id="@+id/trophybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#0000"
+            android:drawableStart="@drawable/trophybutton" >
+        </Button>
+
+        <Button
+            android:id="@+id/settingsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#0000"
+            android:drawableStart="@drawable/settingsbutton" >
+        </Button>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/play"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button2"
+        android:text="Play" />
+
+    <ImageView
+        android:id="@+id/mascot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_alignRight="@+id/play"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/sittingchicken" />
+
+</RelativeLayout>

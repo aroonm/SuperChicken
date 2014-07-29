@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blurry" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/titleinst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:background="#1111"
+                android:padding="20dp"
+                android:text="Instructions"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yellowinst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/yellowfin" />
+
+            <TextView
+                android:layout_width="377dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:text="Yellow eggs give you one point each and will be available throughout the game. Control Super Chicken and collect as many yellow eggs as you can."
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/redinst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1111"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="460dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.31"
+                android:text="Red eggs give you three points each. These eggs are more rare than the yellow ones, and will only be available once you reach a score of ten at least."
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/redfin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blueinst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluefin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.31"
+                android:text="Blue eggs are the most rare. These eggs will be available only once you reach a score of at least twenty. These eggs give you five points each, making them the most precious and valuable eggs in the land."
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blackinst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1111"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="468dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.31"
+                android:text="Once coloured, a virus contaminated these eggs turning them black and dangerous. 
+  Avoid these eggs. Contact with even one, will finish off Super Chicken."
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/blackfin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lastinst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="468dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:gravity="center_horizontal"
+                android:text="Miss even a single egg, and it&apos;s game over!"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

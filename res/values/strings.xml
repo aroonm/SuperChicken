@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rescue Birds Eggs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="az_appkey">d934c6fb796f96760cf9528ecfbf5a9d</string>
+
+</resources>
